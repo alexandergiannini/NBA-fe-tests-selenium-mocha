@@ -7,7 +7,6 @@ const assert = require('assert');
 let driver = new webdriver.Builder().forBrowser(webdriver.Browser.CHROME).setChromeOptions().setSafariOptions().build();
 
 (async function navigateToNbaLogin() {
-  //let driver = await new Builder().forBrowser(Browser.CHROME).build();
   try {
     await driver.navigate().to('https://www.nba.com/');
     await driver.findElement(By.xpath("//span[contains(text(),'Sign In')]")).click();
