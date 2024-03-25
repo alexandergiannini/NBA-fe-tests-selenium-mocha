@@ -21,5 +21,5 @@ describe("Navigate to NBA Login test", () => {
       await driver.quit();
     }
   })();
-})
+  })
 })
